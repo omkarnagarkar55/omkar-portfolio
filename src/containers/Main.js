@@ -8,7 +8,6 @@ import Projects from "./projects/Projects";
 import Achievement from "./achievement/Achievement";
 import Blogs from "./blogs/Blogs";
 import StartupProject from "./StartupProjects/StartupProject";
-import Footer from "../components/footer/Footer";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
 import Profile from "./profile/Profile";
@@ -58,7 +57,6 @@ const Main = () => {
             <Achievement />
             <Blogs />
             <Profile />
-            <Footer />
             <ScrollToTopButton />
           </>
         )}
