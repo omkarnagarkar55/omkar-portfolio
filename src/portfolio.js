@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Full Stack Software Engineer 🚀 with 2+ years of experience building scalable web applications and cloud solutions. Currently pursuing MS in Software Engineering at San Jose State University. Specialized in React, Node.js, AWS, and modern development practices."
   ),
-  resumeLink:
-    "", // Add your actual resume link
+  resumeLink: "", // Add your actual resume link
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -50,8 +49,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I Do",
   subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
-  skills: [
-  ],
+  skills: [],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -148,9 +146,7 @@ const educationInfo = {
       subHeader: "Master of Science in Software Engineering",
       duration: "August 2023 - May 2025",
       desc: "Enterprise Distributed Systems, Data Mining, System Security, Application Development, Software System Design.",
-      descBullets: [
-
-      ]
+      descBullets: []
     },
     {
       schoolName: "Savitribai Phule Pune University",
@@ -158,9 +154,7 @@ const educationInfo = {
       subHeader: "Bachelor of Engineering in Computer Science",
       duration: "August 2017 - July 2021",
       desc: "Object-Oriented Programming, Database Management Systems, Operating Systems, Computer Networks, Web Technologies, Advance Data Structures.",
-      descBullets: [
-
-      ]
+      descBullets: []
     }
   ]
 };
@@ -199,15 +193,13 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-        {
+    {
       role: "Cloud Engineering Intern",
       company: "Enpro Inc.",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2024 – Aug 2024",
       desc: "Worked on cloud infrastructure and automation solutions to improve deployment efficiency and system reliability.",
-      descBullets: [
-      
-      ]
+      descBullets: []
     },
     {
       role: "Software Engineer",
@@ -215,9 +207,7 @@ const workExperiences = {
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "July 2021 – July 2023",
       desc: "Full-stack developer responsible for building enterprise web applications and leading technical initiatives.",
-      descBullets: [
-      
-      ]
+      descBullets: []
     },
     {
       role: "Machine Learning Intern",
@@ -225,9 +215,7 @@ const workExperiences = {
       companylogo: require("./assets/images/airbnbLogo.png"),
       date: "Dec 2019 – Mar 2020",
       desc: "Developed machine learning models and data analysis solutions for business intelligence applications.",
-      descBullets: [
-        
-      ]
+      descBullets: []
     }
   ]
 };
@@ -244,12 +232,14 @@ const openSource = {
 
 const bigProjects = {
   title: "Featured Projects",
-  subtitle: "Showcasing my expertise in full-stack development and cloud technologies",
+  subtitle:
+    "Showcasing my expertise in full-stack development and cloud technologies",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
       projectName: "Ekko: Scalable Microblogging Platform",
-      projectDesc: "A Twitter-like microblogging platform built with modern technologies. Features real-time messaging, user authentication, post interactions, and a responsive design. Implemented with React, TypeScript, Node.js, GraphQL, and PostgreSQL with Redis caching.",
+      projectDesc:
+        "A Twitter-like microblogging platform built with modern technologies. Features real-time messaging, user authentication, post interactions, and a responsive design. Implemented with React, TypeScript, Node.js, GraphQL, and PostgreSQL with Redis caching.",
       footerLink: [
         {
           name: "Visit Github Repo",
@@ -261,7 +251,8 @@ const bigProjects = {
     {
       image: require("./assets/images/nextuLogo.webp"),
       projectName: "AI-Powered Code Review Tool",
-      projectDesc: "Machine learning-based code review automation tool that analyzes code quality, suggests improvements, and detects potential bugs. Built using Python, TensorFlow, and integrated with GitHub Actions.",
+      projectDesc:
+        "Machine learning-based code review automation tool that analyzes code quality, suggests improvements, and detects potential bugs. Built using Python, TensorFlow, and integrated with GitHub Actions.",
       footerLink: [
         {
           name: "GitHub Repository",
@@ -284,8 +275,10 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "IBM Data Science Professional Certification",
-      subtitle: "Comprehensive certification covering Python, SQL, machine learning, and data visualization techniques.",
-      image: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~EGJVDZESH3NZ/CERTIFICATE_LANDING_PAGE~EGJVDZESH3NZ.jpeg",
+      subtitle:
+        "Comprehensive certification covering Python, SQL, machine learning, and data visualization techniques.",
+      image:
+        "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~EGJVDZESH3NZ/CERTIFICATE_LANDING_PAGE~EGJVDZESH3NZ.jpeg",
       imageAlt: "IBM Data Science Professional Certificate",
       footerLink: [
         {
@@ -296,8 +289,10 @@ const achievementSection = {
     },
     {
       title: "Stanford Machine Learning",
-      subtitle: "Advanced course covering supervised learning, unsupervised learning, and best practices in machine learning.",
-      image: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FHE7UMA7Z4GG/CERTIFICATE_LANDING_PAGE~FHE7UMA7Z4GG.jpeg",
+      subtitle:
+        "Advanced course covering supervised learning, unsupervised learning, and best practices in machine learning.",
+      image:
+        "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FHE7UMA7Z4GG/CERTIFICATE_LANDING_PAGE~FHE7UMA7Z4GG.jpeg",
       imageAlt: "Stanford Machine Learning",
       footerLink: [
         {
@@ -341,8 +336,6 @@ const blogSection = {
 };
 
 // Talks Sections
-
-
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
