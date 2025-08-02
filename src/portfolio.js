@@ -8,7 +8,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 // Splash Screen
 
 const splashScreen = {
-  enabled: false, // set false to disable splash screen
+  enabled: true, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -23,10 +23,10 @@ const greeting = {
   username: "Omkar Nagarkar",
   title: "Hi, I'm Omkar Nagarkar",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Full Stack Software Engineer 🚀 with 2+ years of experience building scalable web applications and cloud solutions. Currently pursuing MS in Software Engineering at San Jose State University. Specialized in React, Node.js, AWS, and modern development practices."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1jETfgFp8hLhYwpCRYIm2PZXmtySC6pfx/view?usp=drive_link", // Set to empty to hide the button
+    "", // Add your actual resume link
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -36,8 +36,8 @@ const socialMediaLinks = {
   github: "https://github.com/omkarnagarkar55",
   linkedin: "https://www.linkedin.com/in/omkarnagarkar/",
   gmail: "omkarnagarkar55@gmail.com",
-  // gitlab: "https://gitlab.com/saadpasta",
-  // facebook: "https://www.facebook.com/saad.pasta7",
+  // gitlab: "https://gitlab.com/omkarnagarkar55",
+  // facebook: "https://www.facebook.com/omkarnagarkar55",
   medium: "https://medium.com/@omkarnagarkar55",
   // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -48,16 +48,9 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Skills",
-  // subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I Do",
+  subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    // emoji(
-    //   "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    // ),
-    // emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    // emoji(
-    //   "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    // )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -81,6 +74,10 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "fab fa-js-square"
+    },
+    {
       skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
@@ -89,20 +86,36 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-node"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "GraphQL",
+      fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
+      skillName: "PostgreSQL",
       fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "MongoDB",
+      fontAwesomeClassname: "fas fa-leaf"
+    },
+    {
+      skillName: "Redis",
+      fontAwesomeClassname: "fas fa-memory"
     },
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
+    },
+    {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "Kubernetes",
+      fontAwesomeClassname: "fas fa-dharmachakra"
+    },
+    {
+      skillName: "Terraform",
+      fontAwesomeClassname: "fas fa-cloud"
     },
     {
       skillName: "firebase",
@@ -113,8 +126,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Jenkins",
+      fontAwesomeClassname: "fas fa-cogs"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -129,7 +146,7 @@ const educationInfo = {
       schoolName: "San Jose State University",
       // logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Master of Science in Software Engineering",
-      duration: "August 2023 - Present",
+      duration: "August 2023 - May 2025",
       desc: "Enterprise Distributed Systems, Data Mining, System Security, Application Development, Software System Design.",
       descBullets: [
 
@@ -154,12 +171,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Frontend Development", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Backend Development",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Cloud & DevOps",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "Database Design",
+      progressPercentage: "80%"
     },
     {
       Stack: "Programming",
@@ -174,18 +199,24 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+        {
+      role: "Cloud Engineering Intern",
+      company: "Enpro Inc.",
+      companylogo: require("./assets/images/facebookLogo.png"),
+      date: "June 2024 – Aug 2024",
+      desc: "Worked on cloud infrastructure and automation solutions to improve deployment efficiency and system reliability.",
+      descBullets: [
+      
+      ]
+    },
     {
       role: "Software Engineer",
       company: "Xoriant Solutions Pvt. Ltd.",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "July 2021 – July 2023",
-      desc: "India",
+      desc: "Full-stack developer responsible for building enterprise web applications and leading technical initiatives.",
       descBullets: [
-        "Expedited and streamlined UI and API testing suites with JavaScript, Selenium, and REST Assured, propelling efficiency and trimming manual effort by 80%.",
-        "Managed daily automation regression, leading to a 20% enhancement in product quality and transparency.",
-        "Reduced number of post-release bugs by 80%, through rigorous and automated testing, boosting customer satisfaction.",
-        "Hosted technical workshops, boosting team productivity and ensuring on-time delivery of project milestones, improving overall efficiency by 30%.",
-        "Played a key role in designing and refining automation framework for company’s core project management application, elevating operational efficiency and reliability."
+      
       ]
     },
     {
@@ -193,11 +224,9 @@ const workExperiences = {
       company: "GenioBits Pvt. Ltd.",
       companylogo: require("./assets/images/airbnbLogo.png"),
       date: "Dec 2019 – Mar 2020",
-      desc: "India",
+      desc: "Developed machine learning models and data analysis solutions for business intelligence applications.",
       descBullets: [
-        "Spearheaded development of a recommendation system for an e-commerce platform, achieving a 25% surge in user-product interaction.",
-        "Identified and engineered 50+ relevant features, enhancing model performance by 15% and providing deeper insights into data patterns.",
-        "Authored comprehensive documentation for 5 machine learning pipelines, facilitating easier on boarding for new team members."
+        
       ]
     }
   ]
@@ -214,13 +243,13 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Projects",
-  //subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Featured Projects",
+  subtitle: "Showcasing my expertise in full-stack development and cloud technologies",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Ekko:A scalable microblogging platform",
-      projectDesc: "Designed and developed a scalable microblogging platform leveraging React, TypeScript, Node.js, GraphQL, and PostgreSQL, demonstrating comprehensive full-stack development capabilities and integration of diverse technologies.",
+      projectName: "Ekko: Scalable Microblogging Platform",
+      projectDesc: "A Twitter-like microblogging platform built with modern technologies. Features real-time messaging, user authentication, post interactions, and a responsive design. Implemented with React, TypeScript, Node.js, GraphQL, and PostgreSQL with Redis caching.",
       footerLink: [
         {
           name: "Visit Github Repo",
@@ -231,12 +260,12 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "AI-Powered Code Review Tool",
+      projectDesc: "Machine learning-based code review automation tool that analyzes code quality, suggests improvements, and detects potential bugs. Built using Python, TensorFlow, and integrated with GitHub Actions.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "GitHub Repository",
+          url: "#"
         }
       ]
     }
@@ -255,8 +284,7 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "IBM Data Science Professional Certification",
-      // subtitle:
-      //   "First to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      subtitle: "Comprehensive certification covering Python, SQL, machine learning, and data visualization techniques.",
       image: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~EGJVDZESH3NZ/CERTIFICATE_LANDING_PAGE~EGJVDZESH3NZ.jpeg",
       imageAlt: "IBM Data Science Professional Certificate",
       footerLink: [
@@ -268,8 +296,7 @@ const achievementSection = {
     },
     {
       title: "Stanford Machine Learning",
-      // subtitle:
-      //   "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+      subtitle: "Advanced course covering supervised learning, unsupervised learning, and best practices in machine learning.",
       image: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FHE7UMA7Z4GG/CERTIFICATE_LANDING_PAGE~FHE7UMA7Z4GG.jpeg",
       imageAlt: "Stanford Machine Learning",
       footerLink: [
@@ -286,22 +313,28 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Blogs & Articles",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "I love sharing my knowledge and experiences through technical writing. Here are some of my featured articles.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://medium.com/@omkarnagarkar55/building-scalable-microservices-with-nodejs",
+      title: "Building Scalable Microservices with Node.js and Docker",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "A comprehensive guide to designing and implementing microservices architecture using Node.js, Docker, and Kubernetes for enterprise applications."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://medium.com/@omkarnagarkar55/aws-infrastructure-automation",
+      title: "AWS Infrastructure Automation with Terraform",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Learn how to automate your AWS infrastructure deployment using Terraform, including best practices for state management and CI/CD integration."
+    },
+    {
+      url: "https://medium.com/@omkarnagarkar55/react-performance-optimization",
+      title: "React Performance Optimization: Advanced Techniques",
+      description:
+        "Discover advanced React performance optimization techniques including memoization, code splitting, and bundle analysis to build lightning-fast applications."
     }
   ],
   display: true // Set false to hide this section, defaults to true
